@@ -8,6 +8,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   imports: [
@@ -16,7 +17,7 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
     RouterModule.forRoot([{ path: '', component: ProductListComponent }]),
     BrowserAnimationsModule,
   ],
-  declarations: [AppComponent, TopBarComponent, ProductListComponent, ProductAlertsComponent],
+  declarations: [AppComponent, TopBarComponent, ProductListComponent, ProductAlertsComponent, ProductDetailsComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

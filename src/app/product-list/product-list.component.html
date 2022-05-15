@@ -1,21 +1,25 @@
 <h2>Products</h2>
 <div class="product-swipe-area">
+  <!-- overflow hidden; -->
   <div class="product-container">
+    <!-- width 10 * 1 item -->
     <div class="product" *ngFor="let product of products">
-      <div class="product-image-wrap">
-        <img class="product-image" [src]="product.imagePath" />
-      </div>
-      <div class="product-content">
-        <h3>
-          <a
-            [title]="product.name + ' details'"
-            [routerLink]="['/products', product.id]"
-          >
+      <a
+        [title]="product.name + ' details'"
+        [routerLink]="['/products', product.id]"
+      >
+        <div class="product-image-wrap">
+          <img class="product-image" [src]="product.imagePath" />
+        </div>
+        <div class="product-content">
+          <h3>
             {{ product.name }}
-          </a>
-        </h3>
-        <p *ngIf="product.description">Description:{{ product.description }}</p>
-      </div>
+          </h3>
+          <p *ngIf="product.description">
+            Description:{{ product.description }}
+          </p>
+        </div>
+      </a>
 
       <button (click)="share()">Share</button>
       <app-product-alerts [product]="product" (notify)="onNotify()">

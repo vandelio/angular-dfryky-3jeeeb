@@ -3,6 +3,8 @@ export interface Product {
   name: string;
   price: number;
   description: string;
+  imagePath: string;
+  imagePathThumb: string;
 }
 
 export const products = [
@@ -13,6 +15,8 @@ export const products = [
     description: 'A large phone with one of the best screens',
     imagePath:
       'https://images.unsplash.com/photo-1567581935884-3349723552ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
+    imagePathThumb:
+      'https://images.unsplash.com/photo-1567581935884-3349723552ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=70&q=80',
   },
   {
     id: 2,
@@ -21,6 +25,8 @@ export const products = [
     description: 'A great phone with one of the best cameras',
     imagePath:
       'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80',
+    imagePathThumb:
+      'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=70&q=80',
   },
   {
     id: 3,
@@ -29,6 +35,8 @@ export const products = [
     description: '',
     imagePath:
       'https://images.unsplash.com/photo-1567581935884-3349723552ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80',
+    imagePathThumb:
+      'https://images.unsplash.com/photo-1567581935884-3349723552ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=70&q=80',
   },
 ];
 

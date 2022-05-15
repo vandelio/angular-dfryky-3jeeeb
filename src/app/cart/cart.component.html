@@ -1,0 +1,8 @@
+<h3>This is your cart</h3>
+<div *ngFor="let item of items" class="container cartItem">
+  <img [src]="item.imagePathThumb" class="thumbnail" />
+  <div>
+    <span> {{ item.name }} </span>
+    <span> {{ item.price | currency }} </span>
+  </div>
+</div>

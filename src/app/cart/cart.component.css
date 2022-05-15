@@ -1,0 +1,14 @@
+.cartItem {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  background: #ededed;
+  border-bottom: 1px solid #ccc;
+}
+.cartItem > div {
+  display: flex;
+  flex-direction: column;
+}
+.cartItem img {
+  margin-right: 15px;
+}

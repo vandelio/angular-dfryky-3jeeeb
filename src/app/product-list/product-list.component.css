@@ -2,13 +2,13 @@
   max-width: 100%;
   width: 100%;
   overflow: hidden;
-  position: relative;
 }
 .product-container {
   top: 0%;
   left: 0;
   display: flex;
-  overflow: hidden;
+  width: 2300px; /* 10 * 1 item */
+  overflow: scroll;
   align-items: flex-start;
 }
 .product {
@@ -20,8 +20,8 @@
   border-radius: 4px;
   margin-right: 10px;
 }
-.product-content{
-  padding:20px;
+.product-content {
+  padding: 20px;
 }
 button {
   float: left;

@@ -14,9 +14,8 @@ body {
 
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
-
 router-outlet + * {
   padding: 0 16px;
 }

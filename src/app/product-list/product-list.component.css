@@ -1,26 +1,32 @@
+.product-swipe-area-wrap {
+  overflow-x: hidden;
+  width: calc(100vw - 16px);
+}
 .product-swipe-area {
   max-width: 100%;
   width: 100%;
-  overflow: hidden;
+  overflow: scroll;
 }
 .product-container {
   top: 0%;
   left: 0;
   display: flex;
-  width: 2300px; /* 10 * 1 item */
+  width: auto; /* 10 * 1 item */
   overflow: scroll;
   align-items: flex-start;
 }
 .product {
   display: flex;
   flex-direction: column;
-  height: 400px;
-  width: 230px;
+  height: 420px;
+  min-width: 230px !important;
+
   background: pink;
   border-radius: 4px;
   margin-right: 10px;
 }
-.product-content {
+.product-content,
+.product-content-footer {
   padding: 20px;
 }
 button {

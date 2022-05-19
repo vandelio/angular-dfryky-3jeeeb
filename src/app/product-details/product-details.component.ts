@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 
 import { Product, products } from '../products';
 import { CartService } from '../cart.service';
+import * as Highcharts from 'highcharts';
 
 @Component({
   selector: 'app-product-details',
@@ -11,6 +12,15 @@ import { CartService } from '../cart.service';
 })
 export class ProductDetailsComponent implements OnInit {
   product: Product | undefined;
+  Highcharts: typeof Highcharts = Highcharts;
+  chartOptions: Highcharts.Options = {
+    series: [
+      {
+        type: 'line',
+        data: [1, 2, 3, 4, 5],
+      },
+    ],
+  };
 
   constructor(
     private route: ActivatedRoute,

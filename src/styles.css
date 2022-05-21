@@ -32,8 +32,9 @@ h1 {
 h2,
 .mat-typography h2,
 h3,
-.mat-typography h3{
+.mat-typography h3 {
   font-size: 20px;
+  margin-top: 20px;
 }
 
 h1,
@@ -42,7 +43,6 @@ h2,
 .mat-typography h2,
 h3,
 .mat-typography h3 {
-  margin-top: 20px;
   font-weight: lighter;
 }
 

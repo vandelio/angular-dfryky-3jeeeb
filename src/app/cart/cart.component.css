@@ -1,6 +1,7 @@
 .cartItem {
   width: 100%;
   display: flex;
+  flex-direction: row;
   padding: 10px;
   background: #ededed;
   border-bottom: 1px solid #ccc;
@@ -9,6 +10,7 @@
   display: flex;
   flex-direction: column;
 }
-.cartItem img {
+.cartItem img.thumbnail {
   margin-right: 15px;
+  max-width: 70px;
 }

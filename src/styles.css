@@ -29,12 +29,15 @@ h1 {
   margin-bottom: 0 !important;
 }
 
-h2 {
+h2,
+h3 {
   font-size: 20px;
 }
 
 h1,
-h2 {
+h2,
+h3 {
+  margin-top: 20px;
   font-weight: lighter;
 }
 

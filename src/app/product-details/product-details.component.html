@@ -1,9 +1,14 @@
 <h2>Product Details</h2>
 <div *ngIf="product">
-  <h3>{{ product.name }}</h3>
-  <h4>{{ product.price | currency }}</h4>
-  <p>{{ product.description }}</p>
-  <button type="button" (click)="addToCart(product)">Buy</button>
+  <section>
+    <img (src)="(product / imagePath)" />
+    <div>
+      <h3>{{ product.name }}</h3>
+      <h4>{{ product.price | currency }}</h4>
+      <p>{{ product.description }}</p>
+      <button type="button" (click)="addToCart(product)">Buy</button>
+    </div>
+  </section>
   <highcharts-chart
     [Highcharts]="Highcharts"
     [options]="chartOptions"

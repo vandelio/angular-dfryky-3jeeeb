@@ -30,6 +30,9 @@
 .product-content-footer {
   padding: 20px;
 }
+.product-content h3{
+  margin-top: 0;
+}
 button {
   float: left;
   margin-right: 10px;

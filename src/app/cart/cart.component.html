@@ -11,6 +11,16 @@
   </div>
 </div>
 
-<form [formGroup]="checkoutForm">
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+  <label>
+    <span>Name</span>
+    <input id="name" type="text" formControlName="name" />
+  </label>
+
+  <label>
+    <span>Name</span>
+    <input id="address" type="text" formControlName="address" />
+  </label>
+
   <button class="btn" type="submit">Place order</button>
 </form>

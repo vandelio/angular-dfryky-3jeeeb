@@ -10,3 +10,7 @@
     <span> {{ item.price | currency }} </span>
   </div>
 </div>
+
+<form [formGroup]="checkoutForm">
+  <button class="btn" type="submit">Place order</button>
+</form>

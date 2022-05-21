@@ -1,7 +1,7 @@
 <h2>Product Details</h2>
-<div *ngIf="product">
+<div class="single-product" *ngIf="product">
   <section>
-    <img (src)="(product / imagePath)" />
+    <img [src]="product.imagePath" />
     <div>
       <h3>{{ product.name }}</h3>
       <h4>{{ product.price | currency }}</h4>

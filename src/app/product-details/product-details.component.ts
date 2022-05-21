@@ -12,6 +12,8 @@ import * as Highcharts from 'highcharts';
 })
 export class ProductDetailsComponent implements OnInit {
   product: Product | undefined;
+  buttonText = 'Buy';
+  button = this.buttonText;
   Highcharts: typeof Highcharts = Highcharts;
   chartOptions: Highcharts.Options = {
     series: [
@@ -29,7 +31,10 @@ export class ProductDetailsComponent implements OnInit {
 
   addToCart(product: Product) {
     this.cartService.addToCart(product);
-    window.alert('Your product has been added to the cart');
+    this.button = 'Added to cart';
+    setTimeout(() => {
+      this.button = this.buttonText;
+    }, 800);
   }
 
   ngOnInit(): void {

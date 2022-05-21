@@ -25,6 +25,9 @@ router-outlet + * {
 h1 {
   font-size: 32px;
 }
+.mat-typography app-top-bar h1 {
+  margin-bottom: 0 !important;
+}
 
 h2 {
   font-size: 20px;

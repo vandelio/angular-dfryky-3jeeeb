@@ -10,25 +10,34 @@
 .product-container {
   top: 0%;
   left: 0;
-  display: flex;
+
   width: auto; /* 10 * 1 item */
   overflow: scroll;
-  align-items: flex-start;
   padding-bottom: 15px;
+  /*align-items: flex-start;
+  display: flex;*/
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
 }
 .product {
+  background: #9efbe5;
+  height: 420px;
+  max-width: 240px !important;
+  min-width: 230px !important;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-right: 15px;
   display: flex;
   flex-direction: column;
-  height: 420px;
-  min-width: 230px !important;
-
-  background: pink;
-  border-radius: 4px;
-  margin-right: 10px;
 }
 .product-content,
 .product-content-footer {
   padding: 20px;
+}
+
+.product-content-footer {
+  margin-top: auto;
 }
 .product-content h3 {
   margin-top: 0;

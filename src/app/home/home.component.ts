@@ -5,10 +5,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  imageWidth = Number(window.innerWidth - 30);
-  hero = {
-    imagePath: 'https://picsum.photos/' + this.imageWidth + '/300',
-  };
   constructor() {}
 
   ngOnInit(): void {}

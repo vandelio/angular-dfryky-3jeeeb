@@ -37,10 +37,10 @@ import { HttpClientModule } from '@angular/common/http';
     ProductListComponent,
     ProductAlertsComponent,
     ProductDetailsComponent,
+    HeroBannerComponent,
     CartComponent,
     ShippingComponent,
     HomeComponent,
-    HeroBannerComponent,
   ],
   bootstrap: [AppComponent],
 })
